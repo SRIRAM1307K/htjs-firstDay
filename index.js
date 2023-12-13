@@ -1,11 +1,21 @@
-let person = {
-    name: 'John',
-    age: 30,
-    city: 'New York'
-}
+let cars = [
+    {
+        make: "Toyota",
+        model: "Camry",
+        year: 2018
+    }
+];
 
-delete person.age;
-person.job = 'Engineer'
-person.city = 'San Francisco'
+delete cars[0];
 
-console.log(person);
+cars.push(
+    {
+        make: "Honda",
+        model: "Civic",
+        year: 2020
+    }
+)
+
+cars[1].model = "Accord";
+
+console.log(cars);
