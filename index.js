@@ -1,10 +1,11 @@
-let fruits = [];
+let person = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+}
 
-fruits.push("apple","banana","orange")
+delete person.age;
+person.job = 'Engineer'
+person.city = 'San Francisco'
 
-fruits.splice(0, 1);
-fruits.push('grape')
-
-fruits.splice(0, 1, "pear");
-
-console.log(fruits);
+console.log(person);
